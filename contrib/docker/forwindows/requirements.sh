@@ -7,10 +7,12 @@
 #dpkg -l
 
 #sudo apt-get remove -y mingw32 mingw32-binutils mingw32-runtime
-sudo apt-get remove -y "^libqt4-.*" "^mingw32.*" > /dev/null
+#sudo apt-get remove -y "^libqt4-.*" "^mingw32.*" > /dev/null
 
 #echo "=== dpkg -l (after removal of some stuffs)"
 #dpkg -l
+
+sudo apt-get update
 
 sudo apt-get --yes -qq install software-properties-common > /dev/null
 sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa > /dev/null
